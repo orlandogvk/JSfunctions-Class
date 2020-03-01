@@ -1,0 +1,57 @@
+:root{
+    --color-title:green;
+    --color-subtitle:purple;
+}
+body{
+    font-size:2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtitle{
+    font-size:.5em;
+    margin-top: -2.5em;
+    margin-left: -0.5em;
+}
+.title-1{
+    color:var(--color-title);
+}
+.title-2{
+    color:var(--color-subtitle);
+}
+.title-1 + .subtitle{
+    color: var(--color-title);
+}
+
+.title-2 + .subtitle{
+    color:var(--color-subtitle);
+}
+
+.enabled{
+    display:none;
+}
+
+.check:checked~.enabled{
+    display:block;
+}
+
+.check:checked~.disabled{
+    display:none;
+}
+
+/*Selectores tipo propiedad*/
+[type="email"]{
+    border: 1px solid blue;
+}
+
+[type="submit"]{
+    background: red;
+    color:white;
+    border:none;
+}
+
+[required]{
+    border: 2px solid red;
+    margin: .5em;
+}
+
+

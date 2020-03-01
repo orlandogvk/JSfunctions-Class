@@ -1,0 +1,44 @@
+
+
+:root {
+    --colort:red;
+    --colorp:white;
+}
+
+.title{
+    background:yellow;
+    color:var(--colort);
+}
+
+.description{
+    background: green;
+    color:var(--colorp);
+}
+
+.bold {
+    font-weight: bolder;
+}
+/*Selectores compuestos*/
+.title,
+.description{
+    text-align: center;
+}
+
+
+.plural{
+    background: blue;
+    color:white;
+}
+
+.item{
+    color:red;
+}
+
+li>ul{
+    display:none;
+    
+}
+
+li:hover ul{
+    display:block;
+}
